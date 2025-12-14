@@ -152,6 +152,8 @@ export function ImageUpload({ onUpload, maxSizeMB = 5 }: ImageUploadProps) {
                     accept="image/*"
                     onChange={handleFileSelect}
                     style={{ display: "none" }}
+                    aria-label="Upload image file"
+                    title="Select an image to upload"
                 />
 
                 {isUploading ? (
